@@ -1,3 +1,9 @@
+const het = window.innerHeight; 
+const full= document.querySelector('#banner').clientHeight;
+const bar = full + het; 
+console.log(bar);
+
+
 window.onload = function(){
 var local =localStorage.getItem("dark");
 const x =document.getElementById("switch");
@@ -57,26 +63,21 @@ localStorage.setItem("dark", 2);
 }
 
 
-function cha() {
+function cha(){
 var x = window.matchMedia("(min-width: 768px)");
 var y =document.getElementById("nav");
+document.getElementById("banner").style.setProperty('height' , 'calc(100vh - 16px)');
 if (x.matches){
-document.getElementById("nav").style.height ="60px";
-document.getElementById("nav").style.transition ="all 0s";
-alert("and");
-} 
-else if(x.matches && y.style.height ==="275px"){
-document.getElementById("nav").style.height
-="60px";
+y.style.height ="60px";
+y.style.paddingBottom ="0px";
+document.getElementsByTagName("body")[0].classList.remove("body");		
 }
-else
-{
-document.getElementById("nav").style.transition ="all 0.3s";
-}				
 }
 
 
-
+/* 
+var het =window.innerHeight;
+document.getElementById("banner").style.height =het; */
 
 
 

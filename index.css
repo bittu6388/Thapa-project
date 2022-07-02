@@ -44,7 +44,7 @@ overflow-x: hidden;
 margin: 0;
 padding: 0;
 background: var(--bg);
-background-size: 100vw 100vh;
+background-size: 100vw 130vh;
 background-repeat: no-repeat;
 background-attachment: fixed;
 user-select: none;
@@ -57,7 +57,7 @@ filter: blur(3px);
 
 .loader{
 width: 100vw;
-height: 100vh;
+height: 100%;
 position: fixed;
 z-index: 9999999999999999999;
 touch-action: none;
@@ -93,6 +93,7 @@ font-size: 90px;
 }
 
 #load-div{
+width: 125px;
 position: absolute;
 bottom: 5%;
 transform: translateX(-50%);
@@ -114,7 +115,7 @@ font-size: 18px;
 }
 
 #load{
-width: 120px;
+width: 125px;
 background: #f9005c;
 height: 8px;
 border-radius: 5px;
@@ -131,7 +132,7 @@ animation: load 11s ease-in-out 1;
 width: 0px;
 }				
 100%{
-width: 120px;
+width: 125px;
 }
 }
 
@@ -313,15 +314,18 @@ font-size: 24px;
 /* banner */
 #banner{
 width: 100%;
-display:flex;align-items: stretch;justify-content:center; 
+height: 100vh;
+display:flex;
+align-items: stretch;
+justify-content:center; 
 flex-direction: column;
 padding-top: 1rem;
-height: 100vh;
 position: relative;
 border-bottom-left-radius: 50px;
 border-bottom-right-radius: 50px;
 background-size: 100% 100%;
 }
+
 
 #row{
 width: 100%;	
@@ -396,6 +400,9 @@ transform: scale(1.05);
 
 
 @media(min-width:768px){
+#banner{
+padding-top: 3.5rem;
+}
 #row{
 flex-direction: row-reverse;
 width: 95%;
