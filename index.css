@@ -62,13 +62,14 @@ position: fixed;
 z-index: 9999999999999999999;
 touch-action: none;
 background: var(--bg);
+display: none;
 }
 
 .load-none{
 position: absolute !important;
 transform: translateY(-50%);
-bottom: 500px;
-transition: all 2s;
+bottom: 50%;
+transition: all 0.5s;
 }
 
 #load-icon{
@@ -309,6 +310,19 @@ font-size: 24px;
 }
 }
 
+@media(min-width:768px) and (max-width:900px){
+#nav-two a{
+margin-left: 0.4rem;
+}				
+}
+
+@media(min-width:768px) and (max-width:800px){
+#nav-two{
+margin-left: 0.9rem;
+}
+}
+
+
 
 
 /* banner */
@@ -381,18 +395,20 @@ font-weight: 400;
 }
 #col2 button{
 margin-left: 23px;
-margin-top: 10px;
+margin-top: 15px;
 background: #f9005c;
 color: #fff;
 font-weight: 401;
 border: 5px double var(--border);
-padding: 10px 25px; 
 border-radius: 40px;
 font-size: 15px;
-transition: all 0.2s;
+width: 150px;
+height: 48px;
+transition: all 0.5s;
+display:flex;align-items:center;justify-content:center; 
 }
 #col2 button:hover{
-transform: scale(1.05);
+font-size: 16.5px;
 }
 
 
@@ -409,6 +425,9 @@ width: 95%;
 }			
 #col1{
 padding-top: 0rem;
+}
+#col2{
+padding-left: 1rem;
 }
 #col2 h1{
 padding-top: 0px;

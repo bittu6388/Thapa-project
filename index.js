@@ -16,7 +16,7 @@ document.getElementsByTagName("body")[0].classList.add("dark-theme");
 x.style.justifyContent ="flex-end";		
 }
 else {
-document.getElementsByTagName("body")[0].classList.add("dark-theme");	
+document.getElementsByTagName("body")[0].classList.add("light-theme");	
 }
 }
 
