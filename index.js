@@ -1,6 +1,6 @@
 const het = window.innerHeight; 
 const full= document.querySelector('#banner').clientHeight;
-const bar = full + het; 
+const bar = full - het; 
 console.log(bar);
 
 
