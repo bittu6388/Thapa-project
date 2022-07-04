@@ -1,3 +1,5 @@
+const input =document.getElementById("slide-input").value;
+console.log(input);
 const het = window.innerHeight; 
 const full= document.querySelector('#banner').clientHeight;
 const bar = full - het; 
@@ -75,11 +77,6 @@ document.getElementsByTagName("body")[0].classList.remove("body");
 }
 
 
-/* 
-var het =window.innerHeight;
-document.getElementById("banner").style.height =het; */
-
-
 
 
 function get(){
@@ -152,3 +149,7 @@ function stop(){
 const x =document.getElementsByClassName("loader")[0];
 x.classList.add("load-none");
 }
+
+
+
+

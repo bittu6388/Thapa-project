@@ -1,3 +1,5 @@
+<!-- This website belongs to "Ashutosh Pandey" 😃. This website is made for the project given by  "Binod Bahadur Thapa" on his YouTube channel "Thapa Technical".-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +8,15 @@
 				<meta name="theme-color" content="#f9005c">
 				<link rel="stylesheet" href="index.css">
 				<link rel="stylesheet" href="icon.css">
-				<title>Page title</title>
+				<link rel="stylesheet" href="swiper.css">
+				<title>Educat.</title>
 </head>
-<!-- This website belongs to "0"-->
-
 <body onscroll="get()">
 <div id="cover"></div>
 
 
+
+<!-- This is loading section -->
 <div class="loader">
 	  <div id="load-icon">
    <span class="gw-icon">school</span>
@@ -28,6 +31,8 @@
 
 
 
+
+<!-- This is navbar section -->
 <div id="nav">
    <div id="nav-one">
    		<div>
@@ -39,7 +44,7 @@
    
    <div id="nav-two">
    		<a href="" style="background:#fff;color:#f9005c;">Home</a>
-   		<a href="">Github</a>
+   		<a href="#course">Github</a>
    		<a href="">Docs</a>
    		<a href="">Blogs</a>     
        <div id="select">
@@ -53,6 +58,9 @@
 
 
 
+
+
+<!-- This is banner section -->
 <section id="banner">
 	<div id="row">
 	  		<div id="col1">
@@ -70,6 +78,10 @@
 
 
 
+
+
+
+<!-- This is for counting section -->
 <section id="count">
 <div id="counter">
 			<div id="count1">
@@ -113,17 +125,104 @@
 
 
 
+<!-- Our courses section -->
+<section id="course">
+<div id="course-head">
+	  <h2><span>Our</span>Courses</h2>			
+	  <h4>what we actually provide ?</h4>	  
+</div>
 
+
+
+<div class="swiper mySwiper"> 
+  <div class="swiper-wrapper"> 
+  				
+  				
+     <div class="swiper-slide">
+       <div id="card">
+        <img src="w-development.svg">			
+        <h3>Web Development</h3>
+        <p>Our institution provides the facility to being a web developer/designer.</p>
+       </div>
+     </div> 
+      <div class="swiper-slide">
+       <div id="card">
+        <img src="engineering.svg">			
+        <h3>Engineering</h3>
+        <p>Our institution provides the facility to being a Engineer.</p>
+       </div>
+     </div> 
+     <div class="swiper-slide">
+       <div id="card" class="card-margin">
+        <img src="doctoring.svg">			
+        <h3>Doctoring</h3>
+        <p>Our institution provides the facility to being a Doctor.</p>
+       </div>
+     </div> 
+      <div class="swiper-slide">
+       <div id="card">
+        <img src="d-marketing.svg">			
+        <h3>Deigital Marcketing</h3>
+        <p>Our institution provides the facility to being a Digital Seller.</p>
+       </div>
+     </div> 
+      <div class="swiper-slide">
+       <div id="card" class="card-margin">
+        <img src="biology.svg">			
+        <h3>Biology</h3>
+        <p>Our institution provides the facility to being a Biologist.</p>
+       </div>
+     </div> 
+      <div class="swiper-slide">
+       <div id="card">
+        <img src="g-designer.svg">			
+        <h3>Graphics designing</h3>
+        <p>Our institution provides the facility to being a Graphic Designer.</p>
+       </div>
+     </div> 
+      <div class="swiper-slide">
+       <div id="card">
+        <img src="tracking.svg">			
+        <h3>Tracking</h3>
+        <p>Our institution provides the facility to being a Tracker.</p>
+       </div>
+     </div> 
+
+
+  </div>  
+  <div class="swiper-pagination"></div> 
+</div> 
+  
+  
+  
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="slide-input">
 
 <section style="height:100vh;"></section>
-
-
-
-
-
-
-
-
+<!-- Link for script file -->
 <script src="index.js"></script>				
+<script src="swiper.js"></script>
 </body>
 </html>

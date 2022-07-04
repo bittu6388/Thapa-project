@@ -12,6 +12,8 @@
 --dbg: #07145a;
 --lcbg: #fff;
 --dcbg: transparent;
+--darkcardbg: rgba(255,255,255,0.1);
+--lightcardbg: rgba(0,0,0,0.06);
 }
 .light-theme { 
 --bg: var(--lightbg); 
@@ -20,6 +22,7 @@
 --border: var(--lightborder);
 --secbg: var(--lbg);
 --cbg: var(--lcbg);
+--cardbg: var(--lightcardbg);
 }
 .dark-theme { 
 --bg: var(--darkbg); 
@@ -28,6 +31,7 @@
 --border: var(--darkborder);
 --secbg: var(--dbg);
 --cbg: var(--dcbg);
+--cardbg: var(--darkcardbg);
 }
 
 * > *:not(.gw-icon){
@@ -40,6 +44,7 @@ pointer-events: none;
 
 html, body { 
 height: 100% !important; 
+scroll-behavior: smooth;
 }
 
 body{
@@ -58,6 +63,10 @@ user-select: none;
 filter: blur(3px); 
 }
 
+
+
+
+/*CSS for loading section */
 
 .loader{
 width: 100vw;
@@ -144,7 +153,6 @@ width: 125px;
 
 
 
-
 #cover{
 width: 100%;
 height: 30px;
@@ -153,6 +161,13 @@ z-index: 9999;
 top: 0px;
 backdrop-filter: blur(5px); 
 }
+
+
+
+
+
+
+/*CSS for navbar section */
 
 #nav{
 width: 83%;
@@ -324,11 +339,24 @@ margin-left: 0.4rem;
 margin-left: 0.9rem;
 }
 }
+/* navbar CSS ended */
 
 
 
 
-/* banner */
+
+
+
+
+
+
+
+
+
+
+
+/*CSS for banner section */
+
 #banner{
 width: 100%;
 height: 100vh;
@@ -445,6 +473,18 @@ margin-left: 60px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for counting section */
 
 #count{
 width: 100%;	
@@ -620,3 +660,127 @@ width: 70%;
 }			
 }
 
+
+
+
+
+
+
+
+/* courses section CSS*/
+#course{
+width: 100%;
+flex-direction: column;
+padding-top: 7rem;
+margin-top: 2rem;
+}
+#course-head{
+width: 100%;
+display:flex;
+align-items:center;
+justify-content:center; 
+flex-direction: column;
+}
+
+#course-head h2{
+color: #f9005c;
+font-size: 34px;
+margin: 0;
+}
+#course-head h2 span{
+color: var(--font);
+margin-right: 0.4rem;
+}
+#course-head h4{
+width: 60%;
+text-align: center;
+color: var(--font);
+font-size: 18px;
+font-family: cursive !important;
+margin: 3px 0px 0px 0px;
+}
+
+
+/* 
+border-bottom: 6px double var(--font);
+padding-bottom: 1rem; 
+*/
+
+
+
+#card{
+display:flex;align-items:center;justify-content:center; 
+flex-direction: column;
+padding: 8px 0px;
+background: var(--cardbg);
+color: var(--font);
+border-radius: 6px;
+text-align: center;
+width: 100%;
+}
+#card img{
+width: 60%;
+}
+#card h3{
+margin-bottom: 0;
+font-size: 19px;
+}
+#card p{
+font-weight: 400;
+padding: 0px 18px;
+opacity: 0.7;
+line-height: 24px;
+font-size: 15.5px;
+}
+.card-margin img{
+margin-bottom: 2.33rem;
+margin-top: 2.33rem;
+}
+
+
+@media(min-width:768px){
+#card p{
+padding: 0px 20px;
+line-height: 23px;
+font-size: 14px;
+}
+.card-margin img{
+margin-bottom: 1.8rem;
+margin-top: 1.8rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for initialize SWIPER.JS */
+.swiper { width: 100%; height: 100%;margin-top: 5rem;}
+.swiper-pagination{
+margin-top: 1rem;
+}
+.swiper-slide { text-align: center; font-size: 18px; background: transparent;
+/* Center slide text vertically */ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+
+.swiper-slide { width: 90% !important;}
+
+
+@media(min-width:768px){
+.swiper{
+width: 85% !important;
+}
+.swiper-slide { width: 30% !important;}				
+}
+.swiper-pagination-bullet{ background-color: #bebebe !important;
+opacity: 1 !important;
+}
+.swiper-pagination-bullet-active{
+background: #f9005c !important;
+}
