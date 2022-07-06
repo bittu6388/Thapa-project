@@ -7,6 +7,7 @@ console.log(bar);
 
 
 window.onload = function(){
+document.getElementById("cover").click();
 var local =localStorage.getItem("dark");
 const x =document.getElementById("switch");
 if(local == 1) {
@@ -148,8 +149,148 @@ const myTimeout = setTimeout(stop, 11000);
 function stop(){
 const x =document.getElementsByClassName("loader")[0];
 x.classList.add("load-none");
+const y =document.getElementsByTagName("body")[0].classList.remove("display");
 }
 
 
 
+
+
+
+
+/* Accordion JS */
+const one =document.getElementById("acc-one");
+const two =document.getElementById("acc-two");
+const three =document.getElementById("acc-three"); 
+const four =document.getElementById("acc-four");
+const five =document.getElementById("acc-five"); 
+
+const ek =document.getElementById("one-rot");
+const dau =document.getElementById("two-rot");
+const tin =document.getElementById("three-rot");
+const chaar =document.getElementById("four-rot");
+const panch =document.getElementById("five-rot");
+
+const given =document.getElementById("acc");
+
+
+function accone() {
+if(one.classList.contains('acc-ani')) {
+one.classList.remove('acc-ani');
+one.classList.add('acc-ani2');		
+ek.style.transform ="none";
+}else {
+one.classList.add('acc-ani');			
+one.classList.remove('acc-ani2');
+ek.style.transform ="rotate(45deg)";	
+}				
+}
+
+function acctwo() {
+if(two.classList.contains('acc-ani')) {
+two.classList.remove('acc-ani');
+two.classList.add('acc-ani2');		
+dau.style.transform ="none";
+}else {
+two.classList.add('acc-ani');			
+two.classList.remove('acc-ani2');
+dau.style.transform ="rotate(45deg)";	
+}				
+}
+
+function accthree() {
+if(three.classList.contains('acc-ani')) {
+three.classList.remove('acc-ani');
+three.classList.add('acc-ani2');		
+tin.style.transform ="none";
+}else {
+three.classList.add('acc-ani');			
+three.classList.remove('acc-ani2');
+tin.style.transform ="rotate(45deg)";	
+}				
+}
+
+function accfour() {
+if(four.classList.contains('acc-ani')) {
+four.classList.remove('acc-ani');
+four.classList.add('acc-ani2');		
+chaar.style.transform ="none";
+}else {
+four.classList.add('acc-ani');			
+four.classList.remove('acc-ani2');
+chaar.style.transform ="rotate(45deg)";	
+}				
+}
+
+function accfive() {
+if(five.classList.contains('acc-ani')) {
+five.classList.remove('acc-ani');
+five.classList.add('acc-ani2');		
+panch.style.transform ="none";
+}else {
+five.classList.add('acc-ani');			
+five.classList.remove('acc-ani2');
+panch.style.transform ="rotate(45deg)";	
+}				
+}
+
+
+
+
+
+
+
+
+
+const specifiedElement = document.getElementById("acc-one"); document.addEventListener("click", (event) => { 
+const isClickInside = specifiedElement.contains(event.target); if (!isClickInside) {
+one.classList.remove('acc-ani');
+one.classList.add('acc-ani2');		
+ek.style.transform ="none";
+}
+});
+const specifiedElemen = document.getElementById("acc-two"); document.addEventListener("click", (event) => { 
+const isClickInside = specifiedElemen.contains(event.target); if (!isClickInside) {
+two.classList.remove('acc-ani');
+two.classList.add('acc-ani2');		
+dau.style.transform ="none";
+}
+});
+const specifiedEleme = document.getElementById("acc-three"); document.addEventListener("click", (event) => { 
+const isClickInside = specifiedEleme.contains(event.target); if (!isClickInside) {
+three.classList.remove('acc-ani');
+three.classList.add('acc-ani2');		
+tin.style.transform ="none";
+}
+});
+const specifiedElem = document.getElementById("acc-four"); document.addEventListener("click", (event) => {
+const isClickInside = specifiedElem.contains(event.target); if (!isClickInside) {
+four.classList.remove('acc-ani');
+four.classList.add('acc-ani2');		
+chaar.style.transform ="none";
+}
+});
+const specifiedEle = document.getElementById("acc-five"); 
+document.addEventListener("click", (event) => { 
+const isClickInside = specifiedEle.contains(event.target); if (!isClickInside) {
+five.classList.remove('acc-ani');
+five.classList.add('acc-ani2');		
+panch.style.transform ="none";
+}
+});
+
+
+
+
+
+
+
+
+/* Javascript for scrollspy */
+const link-one =document.getElementById("co");
+const one-sec =document.getElementById("courses"); 
+
+if(one-sec.offsetTop ==="50px") {
+link-one.classList.add('active');
+}
 

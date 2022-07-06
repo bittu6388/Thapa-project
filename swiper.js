@@ -15,7 +15,7 @@
 
 
 
-var swiper = new Swiper(".mySwiper", { 
+var swiper = new Swiper(".course-swiper", { 
 slidesPerView: "auto", 
 spaceBetween: 30,
 centeredSlides: true,
@@ -27,11 +27,15 @@ autoplay: { delay: 1500, disableOnInteraction: false, },
 });
 
 
-
-/* 
-var swiper = new Swiper(".mySwiper", { effect: "coverflow", grabCursor: true, centeredSlides: true, slidesPerView: "auto",loop: true, coverflowEffect: { rotate: 45, stretch: 0, depth: 100, modifier: 1, slideShadows: true, }, pagination: { 
-el: ".swiper-pagination", }, 
-
+var swiper = new Swiper(".teach-swiper", { 
+slidesPerView: "auto", 
+spaceBetween: 30,
+centeredSlides: true,
+speed: 1000,
+loop: true,
+pagination: {
+el: ".swiper-pagination",}, 
 autoplay: { delay: 1500, disableOnInteraction: false, },
+pagination: { el: ".swiper-pagination", clickable: true, }, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev", },
 
-}); */
+});
