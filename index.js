@@ -286,11 +286,4 @@ panch.style.transform ="none";
 
 
 
-/* Javascript for scrollspy */
-const link-one =document.getElementById("co");
-const one-sec =document.getElementById("courses"); 
-
-if(one-sec.offsetTop ==="50px") {
-link-one.classList.add('active');
-}
 
