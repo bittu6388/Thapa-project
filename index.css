@@ -138,7 +138,6 @@ position: fixed;
 z-index: 9999999999999999999;
 touch-action: none;
 background: var(--bg);
-display: none;
 }
 
 .load-none{
