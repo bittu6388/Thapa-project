@@ -79,10 +79,26 @@ document.getElementsByTagName("body")[0].classList.remove("body");
 
 
 
+function topscroll() {
+window.scrollTo({ top: 0, behavior: 'smooth' });				
+}
+
+
 
 function get(){
 const counters = document.querySelectorAll('.num');
 const speed = 100; // The lower the slower
+
+if(document.body.scrollTop > 3200 || document.documentElement.scrollTop > 3200){
+document.getElementById("top-button").style.display = "flex"; 
+document.getElementById("attribute").style.display = "flex"; 
+} 
+else{
+document.getElementById("top-button").style.display = "none"; 
+document.getElementById("attribute").style.display = "none";
+}
+
+
 
 counters.forEach(counter => {
 	const updateCount = () => {
@@ -284,6 +300,28 @@ panch.style.transform ="none";
 
 
 
+/* for attributions */
+function attr() {
+const x =document.getElementById("attr");
+x.style.bottom ="48%";				
+document.getElementsByTagName("body")[0].classList.add("body-attr");
+}
 
 
 
+function clos() {
+const x =document.getElementById("attr");
+x.style.bottom ="500%";				
+document.getElementsByTagName("body")[0].classList.remove("body-attr");				
+x.style.transition ="all 0.5s";
+}
+
+
+document.addEventListener('mouseup', function(e) {
+    var container = document.getElementById('attr');
+const x =document.getElementById("attr");
+    if (!container.contains(e.target)) {
+        x.style.bottom ="500%";				
+document.getElementsByTagName("body")[0].classList.remove("body-attr");				
+x.style.transition ="all 0.5s";
+    }});				
