@@ -26,13 +26,13 @@ document.getElementsByTagName("body")[0].classList.add("light-theme");
 
 function menu() {
 const x =document.getElementById("nav");
-if(x.style.height ==="275px") {
+if(x.style.height ==="310px") {
 x.style.height ="60px";				
 x.style.paddingBottom ="0px";
 document.getElementsByTagName("body")[0].classList.remove("body");		
 }
 else {
-x.style.height ="275px";				
+x.style.height ="310px";				
 x.style.paddingBottom ="10px";
 document.getElementsByTagName("body")[0].classList.add("body");		
 }				
